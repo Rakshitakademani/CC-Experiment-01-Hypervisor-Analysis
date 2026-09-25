@@ -226,7 +226,7 @@ flowchart LR
 
 ## 10. Experimental Evidence
 
-The laboratory manual requires screenshots for the individual hypervisor configurations, system configuration, Sysbench results, resource monitoring and the final comparison. The expected repository structure places this analysis file inside the `results/` directory. fileciteturn0file0L146-L156 fileciteturn0file0L158-L185
+The laboratory manual requires screenshots for the individual hypervisor configurations, system configuration, Sysbench results, resource monitoring and the final comparison. The expected repository structure places this analysis file inside the `results/` directory. 
 
 ### Comparison screenshot
 
@@ -236,24 +236,7 @@ The laboratory manual requires screenshots for the individual hypervisor configu
 
 ---
 
-## 11. Reproducibility Checklist
-
-Before comparing results, verify:
-
-- [x] Same guest operating system
-- [x] Same 2 vCPU configuration
-- [x] Same 2 GB RAM configuration
-- [x] Same 20 GB disk allocation
-- [x] Same Sysbench CPU command
-- [x] Results recorded for both hypervisors
-- [x] Comparison table prepared
-- [x] Benchmark evidence screenshots stored in the repository
-
-The manual explicitly states that both virtual machines must use identical resource configurations for a fair performance comparison. fileciteturn0file0L35-L46
-
----
-
-## 12. Conclusion
+## 11. Conclusion
 
 For this specific Sysbench CPU experiment, the recorded measurements show a clear difference in **reported event throughput and latency** between the two virtualized environments.
 
@@ -265,8 +248,4 @@ However, the total execution times were almost identical at approximately **10 s
 
 ---
 
-## 13. Reference
 
-- Laboratory Manual: **Type-1 vs Type-2 Hypervisor Performance Analysis Experiment**
-- Benchmark tool: **Sysbench CPU**
-- Benchmark command: `sysbench cpu --cpu-max-prime=20000 run`
