@@ -1,4 +1,4 @@
-# ☁️ CC Experiment 01 – Hypervisor Performance Analysis
+# CC Experiment 01 – Hypervisor Performance Analysis
 
 <p align="center">
   <b>Type-1 vs Type-2 Hypervisor Performance using Sysbench</b><br>
@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 About the Experiment
+## About the Experiment
 
 This Cloud Computing experiment compares the CPU performance of virtual machines running on two different hypervisor architectures:
 
@@ -27,7 +27,7 @@ The same CPU benchmark was executed inside Ubuntu virtual machines configured wi
 
 ---
 
-## 🎯 Objective
+## Objective
 
 The objectives of this experiment are to:
 
@@ -40,7 +40,7 @@ The objectives of this experiment are to:
 
 ---
 
-## 🧰 Tools & Technologies
+## Tools & Technologies
 
 | Component | Configuration |
 |---|---|
@@ -55,7 +55,7 @@ The objectives of this experiment are to:
 
 ---
 
-## 🖥️ Experimental Setup
+## Experimental Setup
 
 Both virtual machines were configured with the same basic guest resources:
 
@@ -84,7 +84,7 @@ flowchart LR
 
 ---
 
-## ⚙️ Benchmark Procedure
+## Benchmark Procedure
 
 ### 1. Install Sysbench
 
@@ -117,7 +117,7 @@ sysbench cpu --cpu-max-prime=20000 run
 
 ---
 
-# 🟦 Type-1 Hypervisor – Proxmox VE
+# Type-1 Hypervisor – Proxmox VE
 
 The Proxmox virtual machine was configured with the required CPU, memory, disk, and network resources. Ubuntu was installed and the system configuration was verified before running the benchmark.
 
@@ -133,7 +133,7 @@ The Proxmox virtual machine was configured with the required CPU, memory, disk, 
 | Maximum latency | **2.43 ms** |
 | 95th percentile latency | **0.58 ms** |
 
-### 📸 Evidence
+### Evidence
 
 Proxmox screenshots are available in:
 
@@ -143,7 +143,7 @@ screenshots/type1-proxmox/
 
 ---
 
-# 🟧 Type-2 Hypervisor – VMware Workstation
+# Type-2 Hypervisor – VMware Workstation
 
 The VMware virtual machine was configured with the same basic guest resources and Ubuntu was installed. The same system verification steps and Sysbench workload were used.
 
@@ -169,7 +169,7 @@ screenshots/type2-vmware/
 
 ---
 
-# 📊 Performance Comparison
+# Performance Comparison
 
 ## Complete Benchmark Table
 
@@ -185,7 +185,7 @@ screenshots/type2-vmware/
 
 ---
 
-## 📈 Graph 1 – Events per Second
+## Graph 1 – Events per Second
 
 ```mermaid
 xychart-beta
@@ -199,7 +199,7 @@ The recorded throughput was **1,749.16 events/sec** for Proxmox VE and **271.14 
 
 ---
 
-## 📉 Graph 2 – Average Latency
+## Graph 2 – Average Latency
 
 ```mermaid
 xychart-beta
@@ -213,7 +213,7 @@ The recorded average latency was **0.57 ms** for Proxmox VE and **3.68 ms** for 
 
 ---
 
-## 📊 Graph 3 – Maximum Latency
+## Graph 3 – Maximum Latency
 
 ```mermaid
 xychart-beta
@@ -227,7 +227,7 @@ The recorded maximum latency was **2.43 ms** for Proxmox VE and **14.64 ms** for
 
 ---
 
-## ⏱️ Graph 4 – Total Execution Time
+## Graph 4 – Total Execution Time
 
 ```mermaid
 xychart-beta
@@ -241,7 +241,7 @@ The total execution times were very close: **10.0005 s** and **10.0028 s**, resp
 
 ---
 
-# 🔍 Observed Difference
+# Observed Difference
 
 For the recorded benchmark runs:
 
@@ -272,7 +272,7 @@ The recorded VMware average latency was approximately **6.46×** the Proxmox ave
 
 ---
 
-# 🧠 Key Observation
+# Key Observation
 
 One interesting point is that the **total execution times are almost identical**, while the event counts and latency measurements differ considerably.
 
@@ -286,7 +286,7 @@ This shows why a benchmark should not be interpreted using execution time alone.
 
 ---
 
-# 📸 Experimental Evidence
+# Experimental Evidence
 
 ## Proxmox VE – Type-1
 
@@ -329,7 +329,7 @@ The final comparison screenshot is stored in:
 screenshots/comparison/01-hypervisor-performance-comparison.png
 ```
 
-### 🖼️ Benchmark Comparison
+### Benchmark Comparison
 
 ![Hypervisor Performance Comparison](screenshots/comparison/01-hypervisor-performance-comparison.png)
 
@@ -368,7 +368,7 @@ CC-Experiment-01-Hypervisor-Analysis/
 
 ---
 
-# 🔁 How to Reproduce
+# How to Reproduce
 
 ### Step 1
 Create an Ubuntu VM on **Proxmox VE**.
@@ -419,7 +419,7 @@ Maximum Latency
 
 ---
 
-# 📚 Results File
+# Results File
 
 The detailed benchmark analysis is available here:
 
@@ -429,7 +429,7 @@ It contains the detailed calculations, benchmark interpretation, graphs, and exp
 
 ---
 
-# ✅ Conclusion
+# Conclusion
 
 This experiment documents the CPU benchmark behavior of Ubuntu virtual machines running on **Proxmox VE (Type-1)** and **VMware Workstation (Type-2)** using the same basic VM resources and Sysbench workload.
 
@@ -447,14 +447,3 @@ The results demonstrate measurable differences in the recorded throughput and la
 
 ---
 
-## 👩‍💻 Experiment Repository
-
-**Experiment:** CC Experiment 01  
-**Topic:** Hypervisor Performance Analysis  
-**Benchmark:** Sysbench CPU  
-**Architectures:** Type-1 vs Type-2  
-**Guest OS:** Ubuntu  
-
-<p align="center">
-  <b>☁️ Cloud Computing • Virtualization • Performance Analysis</b>
-</p>
