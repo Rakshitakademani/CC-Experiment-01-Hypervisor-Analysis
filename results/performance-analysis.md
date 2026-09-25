@@ -232,8 +232,6 @@ The laboratory manual requires screenshots for the individual hypervisor configu
 
 ![Hypervisor Performance Comparison](../screenshots/comparison/01-hypervisor-performance-comparison.png)
 
-> If your GitHub folder names differ, update the relative image path above to match your repository structure.
-
 ---
 
 ## 11. Conclusion
@@ -243,8 +241,6 @@ For this specific Sysbench CPU experiment, the recorded measurements show a clea
 The Proxmox VE run recorded **1,749.16 events/sec** compared with **271.14 events/sec** for VMware Workstation. The reported average latency was **0.57 ms** for Proxmox VE and **3.68 ms** for VMware Workstation.
 
 However, the total execution times were almost identical at approximately **10 seconds** for both runs. Therefore, the benchmark should be evaluated using the complete set of measurements rather than total execution time alone.
-
-> **Scope note:** These results represent the configuration and benchmark run documented in this experiment. Hypervisor performance can vary with host hardware, VM configuration, workload, CPU scheduling, virtualization settings and other system conditions.
 
 ---
 
