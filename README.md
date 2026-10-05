@@ -183,7 +183,39 @@ screenshots/type2-vmware/
 | **Maximum Latency** | 2.43 ms | 14.64 ms |
 | **95th Percentile Latency** | 0.58 ms | 5.37 ms |
 
+------
+
+# Observed Difference
+
+For the recorded benchmark runs:
+
+| Observation | Difference |
+|---|---:|
+| Total events | **14,781 more events** on Proxmox |
+| Events/sec | **1,478.02 more events/sec** on Proxmox |
+| Average latency | **3.11 ms lower** on Proxmox |
+| Maximum latency | **12.21 ms lower** on Proxmox |
+
+### Throughput ratio
+
+```text
+1749.16 / 271.14 ≈ 6.45
+```
+
+The recorded Proxmox throughput was approximately **6.45×** the VMware throughput in this benchmark run.
+
+### Average latency ratio
+
+```text
+3.68 / 0.57 ≈ 6.46
+```
+
+The recorded VMware average latency was approximately **6.46×** the Proxmox average latency.
+
+> **Note:** These ratios describe the specific experimental runs documented in this repository. They should not be interpreted as universal performance ratios for every hardware, hypervisor, VM configuration, or workload.
+
 ---
+
 
 ## Graph 1 – Events per Second
 
@@ -238,39 +270,7 @@ xychart-beta
 ```
 
 The total execution times were very close: **10.0005 s** and **10.0028 s**, respectively.
-
----
-
-# Observed Difference
-
-For the recorded benchmark runs:
-
-| Observation | Difference |
-|---|---:|
-| Total events | **14,781 more events** on Proxmox |
-| Events/sec | **1,478.02 more events/sec** on Proxmox |
-| Average latency | **3.11 ms lower** on Proxmox |
-| Maximum latency | **12.21 ms lower** on Proxmox |
-
-### Throughput ratio
-
-```text
-1749.16 / 271.14 ≈ 6.45
-```
-
-The recorded Proxmox throughput was approximately **6.45×** the VMware throughput in this benchmark run.
-
-### Average latency ratio
-
-```text
-3.68 / 0.57 ≈ 6.46
-```
-
-The recorded VMware average latency was approximately **6.46×** the Proxmox average latency.
-
-> **Note:** These ratios describe the specific experimental runs documented in this repository. They should not be interpreted as universal performance ratios for every hardware, hypervisor, VM configuration, or workload.
-
----
+-----
 
 # Key Observation
 
